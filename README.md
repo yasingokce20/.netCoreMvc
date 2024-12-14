@@ -1,0 +1,2 @@
+# .netCoreMvc
+WebProgramlamaProjeÖdevi
