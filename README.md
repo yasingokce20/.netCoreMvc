@@ -1,8 +1,11 @@
 # .netCoreMvc
 Projeden İstenenler 
+
 Projenin amacı, Web Programlama dersinde teorik ve pratik olarak öğrenilen bilgilerin, gerçek bir probleme   
 uygulanarak bu probleme çözüm üreten bir web projesi geliştirilmesidir. 
+
 Proje Hakkında Kısa Açıklama 
+
 Bu projede, ASP.NET Core MVC kullanarak Kuaför/Güzellik salonu(bayanlar) ve Kuaför/Berber (erkekler) 
 salonları için bir kuaför işletme yönetim uygulaması geliştirilmesi hedeflenmektedir.(Bay ve bayan ortaklığında 
 yapılan projelerde her ikisi de tanımlanabilmeli) Sistem, salonların sunduğu işlemleri, bu işlemlerin süre ve 
@@ -10,7 +13,9 @@ yapılan projelerde her ikisi de tanımlanabilmeli) Sistem, salonların sunduğu
 çalışanlardan randevu alabilecekleri nitelikte olacaktır. Bu sayede  çalışanların verimliliği ve günlük kazançları 
 izlenebilecektir. Projenin bir böülümünde veri tabanı ile haberleşmede REST API kullanılacak ve yapay zeka 
 entegrasyonu sayesinde kullanıcılar fotoğraf yükleyerek saç modeli veya renk önerileri alabileceklerdir. 
+
 Proje Konsept ve Gereksinimler 
+
 1. Kuaför/Berber Tanımlamaları 
 o Uygulamada kuaför hem / berber salonları yetki çerçevesinde tanımlanabilir olmalı. (Tek bir 
 kuaför/berber üzerinde yapılacak işlemler de kabul edilecektir) 
@@ -31,7 +36,9 @@ o Projenin en az bir kısmında REST API kullanarak veri tabanı ile iletişim s
 o Projede bir yapay zeka aracı ile entegre çalışan bir özellik bulunmalıdır. 
 o Kullanıcılar sisteme bir fotoğraf yükleyerek, yapay zeka aracılığıyla saç kesim modelleri veya 
 saç rengi önerileri alabilecek. 
-NOT: Daha kapsamlı analizler için Bir kuaför salonu ile görüşebilirsiniz. 
+NOT: Daha kapsamlı analizler için Bir kuaför salonu ile görüşebilirsiniz.
+
+
 Projede Kullanılacak Teknolojiler 
 • Asp.Net Core 6 MVC  veya daha yukarı sürümleri 
 • C# 
