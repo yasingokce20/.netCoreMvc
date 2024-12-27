@@ -6,12 +6,20 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+//veritabaný baðlantasý 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
+
+// Geliþtirme modunda veritabaný hata sayfasýný etkinleþtir
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+// Identity yapýlandýrmasý
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>() // Rolleri destekler
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
@@ -19,7 +27,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseMigrationsEndPoint();
+    app.UseDeveloperExceptionPage(); // Genel hata sayfasý
+    app.UseMigrationsEndPoint();    // EF Core için migration hata sayfasý
 }
 else
 {
