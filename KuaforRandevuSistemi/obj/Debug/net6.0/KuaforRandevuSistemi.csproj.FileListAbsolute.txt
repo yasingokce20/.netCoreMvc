@@ -88,3 +88,4 @@ C:\Users\yasin\source\repos\KuaforRandevuSistemi\KuaforRandevuSistemi\obj\Debug\
 C:\Users\yasin\source\repos\KuaforRandevuSistemi\KuaforRandevuSistemi\obj\Debug\net6.0\KuaforRandevuSistemi.pdb
 C:\Users\yasin\source\repos\KuaforRandevuSistemi\KuaforRandevuSistemi\obj\Debug\net6.0\KuaforRandevuSistemi.genruntimeconfig.cache
 C:\Users\yasin\source\repos\KuaforRandevuSistemi\KuaforRandevuSistemi\obj\Debug\net6.0\ref\KuaforRandevuSistemi.dll
+C:\Users\yasin\source\repos\KuaforRandevuSistemi\KuaforRandevuSistemi\obj\Debug\net6.0\KuaforRandevuSistemi.sourcelink.json

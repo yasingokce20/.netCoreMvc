@@ -2,13 +2,14 @@
 {
     public class Salon
     {
-            public int SalonId { get; set; }
-            public string Name { get; set; }
-            public string Address { get; set; }
-            public string PhoneNumber { get; set; }
-            public string WorkingHours { get; set; } // "09:00-18:00"
+        public int SalonId { get; set; }
+        public string Name { get; set; } = string.Empty; // Zorunlu ve boş olamaz
+        public string? Address { get; set; } // Opsiyonel
+        public string PhoneNumber { get; set; } = string.Empty; // Zorunlu
+        public string? WorkingHours { get; set; } // Opsiyonel (ör. "09:00-18:00")
 
-            public ICollection<Employee> Employees { get; set; }
-        
+        // İlişkiler
+        public ICollection<Employee> Employees { get; set; } = new List<Employee>();
+
     }
 }

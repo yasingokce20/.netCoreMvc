@@ -4,13 +4,14 @@
     {
         public int AppointmentId { get; set; }
         public DateTime AppointmentDate { get; set; }
-        public string CustomerName { get; set; }
-        public string CustomerPhone { get; set; }
-        public int EmployeeId { get; set; }
-        public Employee Employee { get; set; }
+        public string CustomerName { get; set; } = string.Empty;
+        public string CustomerPhone { get; set; } = string.Empty;
 
-        // Many-to-Many: Randevu-Hizmet İlişkisi
-        public ICollection<AppointmentService> AppointmentServices { get; set; }
+        // İlişkiler
+        public int EmployeeId { get; set; }
+        public Employee? Employee { get; set; }
+        public ICollection<AppointmentService> AppointmentServices { get; set; } = new List<AppointmentService>();
+
     }
 }
-}
+

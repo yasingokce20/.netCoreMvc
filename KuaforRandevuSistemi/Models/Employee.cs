@@ -3,16 +3,14 @@
     public class Employee
     {
         public int EmployeeId { get; set; }
-        public string FullName { get; set; }
-        public string Expertise { get; set; }
+        public string FullName { get; set; } = string.Empty; // Zorunlu
+        public string? Expertise { get; set; } // Opsiyonel (ör. "Saç Kesimi")
+
+        // İlişkiler
         public int SalonId { get; set; }
-        public Salon Salon { get; set; }
-
-        // Many-to-Many: Çalışan-Hizmet İlişkisi
-        public ICollection<EmployeeService> EmployeeServices { get; set; }
-
-        // One-to-Many: Çalışan-Randevu İlişkisi
-        public ICollection<Appointment> Appointments { get; set; }
+        public Salon? Salon { get; set; }
+        public ICollection<EmployeeService> EmployeeServices { get; set; } = new List<EmployeeService>();
+        public ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
 
     }
 }

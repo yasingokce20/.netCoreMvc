@@ -3,14 +3,12 @@
     public class Service
     {
         public int ServiceId { get; set; }
-        public string Name { get; set; }
-        public decimal Price { get; set; }
-        public int Duration { get; set; } // Süre (dakika)
+        public string Name { get; set; } = string.Empty; // Zorunlu
+        public decimal Price { get; set; } // Zorunlu
+        public int Duration { get; set; } // Zorunlu (Dakika cinsinden)
 
-        // Many-to-Many: Hizmet-Çalışan İlişkisi
-        public ICollection<EmployeeService> EmployeeServices { get; set; }
-
-        // Many-to-Many: Hizmet-Randevu İlişkisi
-        public ICollection<AppointmentService> AppointmentServices { get; set; }
+        // İlişkiler
+        public ICollection<EmployeeService> EmployeeServices { get; set; } = new List<EmployeeService>();
+        public ICollection<AppointmentService> AppointmentServices { get; set; } = new List<AppointmentService>();
     }
 }
