@@ -24,6 +24,9 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+// Örnek veri ekleme
+DatabaseInitializer.Seed(app.Services);
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
